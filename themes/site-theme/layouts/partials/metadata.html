@@ -1,0 +1,31 @@
+{{ $dateTime := .PublishDate.Format "2006-01-02" }} {{ $dateFormat :=
+.Site.Params.dateFormat | default "Jan 2, 2006" }}
+
+<!-- Display the publish date -->
+{{ if .PublishDate }}
+<i data-feather="calendar"></i>
+<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+{{ end }}
+
+<!-- Display the tags -->
+{{ with .Params.tags }}
+<i data-feather="tag"></i>
+{{ range . }} {{ $href := print (absURL "tags/") (urlize .) }}
+<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
+{{ end }} {{ end }}
+
+<!-- Display the author or authors -->
+{{ if .Params.authors }}
+<p>
+  By {{ range $index, $author := .Params.authors }} {{ $authorData := index
+  .Site.Params $author }} {{ if $authorData }} {{ if $index }}, {{ end }} {{
+  $authorData.name }} {{ else }} {{ $author }} {{ end }} {{ end }}
+</p>
+
+{{ else if .Params.author }}
+<p>
+  By {{ $author := .Params.author }} {{ $authorData := index .Site.Params
+  $author }} {{ if $authorData.name }} {{ $authorData.name }} {{ else }} {{
+  $author }} {{ end }}
+</p>
+{{ end }}

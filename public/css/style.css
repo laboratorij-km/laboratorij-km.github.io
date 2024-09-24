@@ -1,0 +1,36 @@
+.vh-50 {
+  height: 50vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(60, 60, 60);
+}
+
+pre,
+.pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: scroll;
+}
+
+pre code {
+  display: block;
+  padding: 1.5em 1.5em;
+  white-space: pre;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+pre {
+  background-color: #222;
+  color: #ddd;
+  white-space: pre;
+
+  hyphens: none;
+  position: relative;
+}

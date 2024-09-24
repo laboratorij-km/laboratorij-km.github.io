@@ -1,0 +1,16 @@
+# Basic Information
+name = "John Doe"
+bio = "I am a software engineer with a passion for machine learning and open-source projects."
+profile_picture = "images/profile.jpg"
+
+# Social Links
+[social]
+github = "https://github.com/johndoe"
+linkedin = "https://linkedin.com/in/johndoe"
+twitter = "https://twitter.com/johndoe"
+
+# Custom Params
+[params]
+avatar = "images/cover.jpg"
+email = "johndoe@example.com"
+location = "New York, USA"

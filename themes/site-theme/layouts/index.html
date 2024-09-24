@@ -1,0 +1,116 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<div class="p-5 vh-100 bg-primary text-white d-flex justify-content-center align-items-center"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ "img/covers/cover1.jpg" | relURL }}') no-repeat center center/cover;">
+  <div class="text-center">
+    <h1 class="display-4">{{ .Site.Title }}</h1>
+    <p class="lead">Advancing Technology Through Innovative Research</p>
+    <a href="{{ "research/" | relURL }}" class="btn btn-light btn-lg">Explore Our Research</a>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <h2 class="h4">About Us</h2>
+      <p class="lead">
+        At LKM, we are committed to pushing the boundaries of knowledge in technology and science. Our team of researchers and professionals focuses on cutting-edge research in areas like artificial intelligence, machine learning, computer vision, and data science.
+      </p>
+      <a href="{{ "about/" | relURL }}" class="btn btn-outline-primary">Learn More About Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Key Research Areas Section -->
+<div class="container my-5">
+  <h3 class="h5 text-center mb-4">Key Research Areas</h3>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="card border-light shadow-sm p-3 mb-4">
+        <img src="{{ "img/icons/ai.svg" | relURL }}" class="card-img-top" alt="AI Research" style="width: 80px; margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title">Artificial Intelligence</h5>
+          <p class="card-text">Developing AI systems that can learn and evolve autonomously.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-light shadow-sm p-3 mb-4">
+        <img src="{{ "img/icons/ml.svg" | relURL }}" class="card-img-top" alt="ML Research" style="width: 80px; margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title">Machine Learning</h5>
+          <p class="card-text">Innovative approaches to machine learning for solving real-world problems.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-light shadow-sm p-3 mb-4">
+        <img src="{{ "img/icons/cv.svg" | relURL }}" class="card-img-top" alt="Computer Vision" style="width: 80px; margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title">Computer Vision</h5>
+          <p class="card-text">Exploring vision-based AI to interpret and understand the visual world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Members Section -->
+<div class="container my-5">
+  <h3 class="h5 text-center mb-4">Our Team</h3>
+  <div class="row">
+    {{ $members := where .Site.Pages "Section" "members" }}
+    {{ range $members }}
+    {{ if eq .Type "member" }}
+    <div class="col-md-4 mb-4">
+      <div class="card border-secondary shadow-sm">
+        <img src="{{ .Params.avatar | relURL }}" class="card-img-top" alt="{{ .Title }}">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ .Permalink }}" class="text-decoration-none text-dark">
+              {{ .Title }}
+            </a>
+          </h5>
+          <p class="card-text">{{ .Params.bio }}</p>
+          <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+<!-- Recent News or Publications Section -->
+<div class="container my-5">
+  <h3 class="h5 text-center mb-4">Latest Publications & News</h3>
+  <div class="row">
+    {{ $posts := where .Site.Pages "Section" "posts" }}
+    {{ range first 3 (sort $posts "Date" "desc") }}
+    <div class="col-md-4 mb-4">
+      <div class="card border-light shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ .Permalink }}" class="text-decoration-none text-dark">
+              {{ .Title }}
+            </a>
+          </h5>
+          <p class="text-muted">{{ .Date.Format "Jan 2, 2006" }}</p>
+          <p class="card-text">{{ .Summary }}</p>
+          <a href="{{ .Permalink }}" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="bg-light py-5 text-center">
+  <h3 class="h5">Interested in Joining Us?</h3>
+  <p>We are always looking for passionate researchers and collaborators. Explore opportunities to work with us.</p>
+  <a href="{{ "contact/" | relURL }}" class="btn btn-primary btn-lg">Get in Touch</a>
+</div>
+
+{{ end }}

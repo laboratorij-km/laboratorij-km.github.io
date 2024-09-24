@@ -1,0 +1,42 @@
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Links -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ "about/" | relURL }}" class="text-white">About Us</a></li>
+          <li><a href="{{ "research/" | relURL }}" class="text-white">Our Research</a></li>
+          <li><a href="{{ "members/" | relURL }}" class="text-white">Team</a></li>
+          <li><a href="{{ "contact/" | relURL }}" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Contact Information -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">Contact Us</h5>
+        <p class="mb-0">1234 Research Lane</p>
+        <p class="mb-0">Tech City, TX 12345</p>
+        <p class="mb-0">Email: <a href="mailto:info@example.com" class="text-white">info@example.com</a></p>
+        <p class="mb-0">Phone: (123) 456-7890</p>
+      </div>
+
+      <!-- Footer Social Media -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">Follow Us</h5>
+        <a href="https://twitter.com/yourhandle" class="text-white me-2"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://facebook.com/yourpage" class="text-white me-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="https://linkedin.com/in/yourprofile" class="text-white"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Copyright Information -->
+    <div class="text-center mt-4">
+      <p class="mb-0">Copyright &copy; {{ now.Format "2006" }} Trajche Krstev. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Add Font Awesome for icons if needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-...YOUR_INTEGRITY_HASH_HERE..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -1,0 +1,36 @@
+{{ define "main" }}
+<!-- Members Section -->
+<div class="container my-5">
+  <h1 class="h3 text-center mb-4">Laboratory Members</h1>
+  <div class="row">
+    {{ $members := where .Site.Pages "Section" "members" }}
+    <!-- Loop through all members -->
+    {{ range $members }} {{ if eq .Type "member" }}
+
+    <div class="col-md-4 mb-4 text-center">
+      <div class="card border-secondary shadow-sm">
+        <!-- Member Avatar -->
+        <img
+          src="{{ .Params.avatar | relURL }}"
+          class="card-img-top rounded-circle mx-auto mt-3"
+          alt="{{ .Title }}"
+          style="width: 150px; height: 150px; object-fit: cover"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ .Title }}</h5>
+          <!-- Member Bio -->
+          <p class="card-text">{{ .Params.bio }}</p>
+          <!-- Link to Member's Personal Website -->
+          <a
+            href="{{ .Params.website }}"
+            target="_blank"
+            class="btn btn-outline-primary"
+            >Visit Website</a
+          >
+        </div>
+      </div>
+    </div>
+    {{ end }} {{ end}}
+  </div>
+</div>
+{{ end }}
