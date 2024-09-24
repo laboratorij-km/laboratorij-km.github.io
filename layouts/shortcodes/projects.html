@@ -1,0 +1,9 @@
+{{ $projects := where .Site.Pages "Section" "projects" }}
+<ul class="projects-list">
+  {{ range $projects }} {{ if .IsPage }}
+  <li class="project-item mb-3">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Params.description }}</p>
+  </li>
+  {{ end }} {{ end }}
+</ul>

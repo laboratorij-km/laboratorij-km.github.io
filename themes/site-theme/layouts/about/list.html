@@ -1,7 +1,9 @@
 {{ define "main" }}
 <!-- Hero Section -->
-<div class="p-5 vh-50 bg-primary text-white d-flex justify-content-center align-items-center"
-  style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ .Params.cover | relURL }}') no-repeat center center/cover;">
+<div
+  class="p-5 vh-50 bg-primary text-white d-flex justify-content-center align-items-center"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ .Params.cover | relURL }}') no-repeat center center/cover;"
+>
   <div class="text-center">
     <h1 class="display-4">{{ .Title }}</h1>
     <p class="lead">Our Mission and Vision</p>
@@ -11,64 +13,7 @@
 <!-- Mission and Vision Section -->
 <div class="container my-5">
   <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <h2 class="h3 mb-4">Our Mission</h2>
-      <p class="lead">
-        At LKM, our mission is to drive forward the boundaries of technology and scientific knowledge. We aim to deliver innovative solutions and contribute to meaningful advancements in fields such as artificial intelligence, machine learning, computer vision, and data science.
-      </p>
-      <h2 class="h3 mb-4">Our Vision</h2>
-      <p class="lead">
-        We envision a future where our research and technologies significantly impact and enhance various aspects of life, from everyday experiences to complex problem-solving. Our vision is to be at the forefront of technological innovation, leading with integrity, excellence, and a commitment to making a difference.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- Our Team Section -->
-<div class="container my-5">
-  <h2 class="text-center mb-4">Meet Our Team</h2>
-  <div class="row">
-    {{ $members := where .Site.Pages "Section" "members" }}
-    <!-- Filter pages by section -->
-    {{ range $members }} {{ if eq .Type "bio" }}
-    <div class="col-md-4 mb-4">
-      <div class="card border-secondary shadow-sm">
-        <img src="{{ .Params.avatar | relURL }}" class="card-img-top" alt="{{ .Title }}">
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ .Title }}</h5>
-          <p class="card-text">{{ .Params.bio }}</p>
-          <a href="{{ .RelPermalink }}" class="btn btn-outline-primary">Read More</a>
-        </div>
-      </div>
-    </div>
-    {{ end }} {{ end }}
-  </div>
-</div>
-
-<!-- History and Achievements Section -->
-<div class="container my-5">
-  <h2 class="text-center mb-4">Our History and Achievements</h2>
-  <div class="row">
-    <div class="col-lg-10 offset-lg-1">
-      <p>
-        Founded in [Year], LKM has a rich history of groundbreaking research and significant achievements in various domains of technology and science. Our commitment to excellence and innovation has earned us recognition and accolades in the academic and professional communities.
-      </p>
-      <ul class="list-unstyled">
-        <li><strong>[Year]:</strong> [Achievement or Milestone]</li>
-        <li><strong>[Year]:</strong> [Achievement or Milestone]</li>
-        <li><strong>[Year]:</strong> [Achievement or Milestone]</li>
-        <!-- Add more milestones as needed -->
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div class="container my-5">
-  <div class="text-center">
-    <h2 class="h4">Get in Touch</h2>
-    <p>If you have any questions or would like to learn more about our work, feel free to reach out to us.</p>
-    <a href="{{ "contact/" | relURL }}" class="btn btn-primary btn-lg">Contact Us</a>
+    <div class="col-lg-8 offset-lg-2">{{.Content}}</div>
   </div>
 </div>
 

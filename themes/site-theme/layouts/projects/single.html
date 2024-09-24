@@ -1,0 +1,18 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<div class="p-5 vh-50 bg-primary text-white d-flex justify-content-center align-items-center"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "img/covers/cover1.jpg" | relURL }}') no-repeat center center/cover;">
+  <div class="text-center">
+    <h1 class="display-4">{{.Title}}</h1>
+    <p class="lead">{{.Params.description}}.</p>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  <a href="{{ "/projects/" | relURL }}" class="btn btn-primary mt-4">Back to Projects</a>
+</div>
+{{ end }}
