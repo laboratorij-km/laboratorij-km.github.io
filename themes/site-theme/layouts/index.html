@@ -60,24 +60,30 @@
 <div class="container my-5">
   <h3 class="h5 text-center mb-4">Our Team</h3>
   <div class="row">
-    {{ $members := where .Site.Pages "Section" "members" }}
-    {{ range $members }}
-    {{ if eq .Type "member" }}
-    <div class="col-md-4 mb-4">
-      <div class="card border-secondary shadow-sm">
-        <img src="{{ .Params.avatar | relURL }}" class="card-img-top" alt="{{ .Title }}">
-        <div class="card-body">
-          <h5 class="card-title">
-            <a href="{{ .Permalink }}" class="text-decoration-none text-dark">
-              {{ .Title }}
-            </a>
-          </h5>
-          <p class="card-text">{{ .Params.bio }}</p>
-          <a href="{{ .Permalink }}" class="btn btn-primary">Read More</a>
+    <!-- Load members from data -->
+    {{ range .Site.Data.members.members }}
+    <div class="col-md-4 mb-4 text-center">
+      <div class="card border-secondary shadow-sm" style="min-height: 400px">
+        <!-- Member Avatar -->
+        <img
+          src="{{ .avatar | relURL }}"
+          class="card-img-top rounded-circle mx-auto mt-3"
+          alt="{{ .name }}"
+          style="width: 150px; height: 150px; object-fit: cover"
+        />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ .name }}</h5>
+          <!-- Member Bio -->
+          <p class="card-text">{{ .bio }}</p>
+          <!-- Spacer to push the button to the bottom -->
+          <div class="mt-auto">
+            <!-- Link to Member's Bio Page using RelPermalink -->
+            <a href="{{ .relUrl | relURL }}" class="btn btn-outline-primary"
+              >Visit Bio</a>
+          </div>
         </div>
       </div>
     </div>
-    {{ end }}
     {{ end }}
   </div>
 </div>

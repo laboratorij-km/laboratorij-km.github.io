@@ -13,10 +13,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/members/member1/</loc>
-  </url><url>
-    <loc>http://localhost:1313/members/member2/</loc>
-  </url><url>
     <loc>http://localhost:1313/members/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

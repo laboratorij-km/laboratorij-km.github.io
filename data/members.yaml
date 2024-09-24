@@ -1,0 +1,15 @@
+members:
+  - name: "John Doe"
+    avatar: "img/members/placeholder.jpg"
+    bio: "Researcher focused on machine learning and AI."
+    relUrl: "lab_member1/"
+
+  - name: "Jane Smith"
+    avatar: "img/members/placeholder.jpg"
+    bio: "Expert in computer vision and data science."
+    relUrl: "lab_member2/"
+
+  - name: "Sam Wilson"
+    avatar: "img/members/placeholder.jpg"
+    bio: "Specializes in AI-driven automation and robotics."
+    relUrl: "lab_member3/"
