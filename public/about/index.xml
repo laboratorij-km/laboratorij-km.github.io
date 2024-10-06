@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on LKM site</title>
+    <title>Abouts on LKM site</title>
     <link>http://localhost:1313/about/</link>
-    <description>Recent content in About on LKM site</description>
+    <description>Recent content in Abouts on LKM site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 05 Oct 2024 12:06:31 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Location</title>
+      <link>http://localhost:1313/about/location/</link>
+      <pubDate>Sat, 05 Oct 2024 12:06:31 +0200</pubDate>
+      <guid>http://localhost:1313/about/location/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Presentations</title>
+      <link>http://localhost:1313/about/presentations/</link>
+      <pubDate>Sat, 05 Oct 2024 12:06:19 +0200</pubDate>
+      <guid>http://localhost:1313/about/presentations/</guid>
+      <description>Presentation fliers LKM English flier (PDF, English) LKM Slovene flier (PDF, Slovene) PowerPoint Presentations LKM presentation (PPTX, English) Predstavitev LKM (PPTX, Slovene) Posters LKM Slovene poster (PDF, Slovene) Presentation of selected research topics (PPTX, Slovene) LKM intro Domen - Profiliranje spletnih uporabnikov Erik - Predstavitev Gregor - Predstavitev za LKM Haris - Predstavitev Igor - Določitev lokacije primarnega tumorja Igor - Modeliranje gibanja vodnih mas v Sredozemskem morju Igor - Povzemanje besedil Igor - Razlaga napovedi Jana - Prosojnice Kaja - Presentation AEE Marko - Projekt za informativni dan 2017 (1) Marko - Projekt za informativni dan 2017 (2) Martin - LKM presentation Matej - Učenje s kolonijo mravelj Matjaž - Proizvodnja elektrike in skoki Matjaž - Proizvodnja elektrike Miha - Analiza socialnih omrežij Petar - Modeliranje športa Zoran - Predstavitve projektov 2017 (ext) </description>
+    </item>
   </channel>
 </rss>

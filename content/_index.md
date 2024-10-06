@@ -2,23 +2,12 @@
 title = 'LKM Landing Page'
 date = 2024-08-30T14:44:25+02:00
 draft = false
-cover = "img/covers/cover1.jpg"
 +++
 
-## About Us
+### Laboratory for Cognitive Modeling
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac ex ac justo bibendum interdum. Sed dictum ante nec nisi lacinia, in luctus erat vestibulum. Nullam auctor, justo ac gravida gravida, orci justo aliquet elit, et fermentum libero justo non nulla. Vivamus in orci vitae arcu sodales dignissim. Curabitur et ante vel est pretium dictum.
+LKM research areas are artificial intelligence, machine learning, statistics, natural language processing, image analysis, cognitive modelling, and data mining. Research is applied to cognitive, medical, biological, financial, and other processes. We are developing, testing, and applying new approaches and algorithms for modelling from numeric, symbolic and pictorial data. Recent research is related to deep neural networks in language and graphs, neuro-symbolic processing, data generation, reliability of models’ predictions in classification and regression, reliability of clustering, ensemble learning, latent models for count data, cross-lingual model transfer, text summarization, modelling sports data, user profiling, recommendation systems, mining spatial data, and mining of data streams.
 
-## Key Research Areas
+![Cognitive Modelling Img](img/cognitiveModeling.png)
 
-- **Lorem Ipsum**: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae arcu sit amet dui bibendum gravida.
-- **Lorem Ipsum**: Sed et sapien in sapien suscipit consequat. Suspendisse potenti. Nulla facilisi.
-- **Lorem Ipsum**: Vivamus sit amet dolor a elit vehicula sollicitudin. Aenean dignissim ligula nec odio accumsan, sit amet tincidunt sapien viverra.
-
-## Featured Projects
-
-{{< projects>}}
-
-## Our Team
-
-{{< members >}}
+[LKM homepage @ FRI webpages](https://fri.uni-lj.si/en/laboratory/lkm)

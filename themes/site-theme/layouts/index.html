@@ -1,18 +1,46 @@
 {{ define "main" }}
-<!-- Hero Section -->
-<div class="p-5 vh-100 bg-primary text-white d-flex justify-content-center align-items-center"
-  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ "img/covers/cover1.jpg" | relURL }}') no-repeat center center/cover;">
-  <div class="text-center">
-    <h1 class="display-4">{{ .Site.Title }}</h1>
-    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, mollitia.</p>
+<div class="row">
+  <!-- Sub-navbar -->
+  <div class="col-lg-12">
+    <div id="navSub">
+      <ul class="nav">
+        <li class="sub-nav-item">
+          <a href="/">About</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="/about/presentations">Presentations</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="/about/location">Location</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <div class="row">
+    <!-- Left side content -->
+    <div class="col-lg-8">{{.Content}}</div>
+
+    <!-- Right side content for links and quick facts -->
+    <div class="col-lg-4">
+      <h3>Quick Facts</h3>
+      <p>
+        Laboratory for Cognitive Modeling <br />
+        University of Ljubljana <br />
+        Faculty of Computer and Information Science <br />
+        Večna pot 113 <br />
+        1000 Ljubljana <br />
+        Slovenia
+      </p>
+      <p>tel: +386-1-4798-226</p>
+      <p>
+        <a href="http://sicris.izum.si/search/grp.aspx?lang=slv&amp;id=6836"
+          >Research group at SICRIS</a
+        >
+      </p>
+    </div>
   </div>
 </div>
 
-<!-- About Section -->
-<div class="container my-5">
-    <div class="col-lg-10 offset-lg-1">
-      {{ .Content }}
-    </div>
-</div>
-
-{{ end }}
+{{end}}

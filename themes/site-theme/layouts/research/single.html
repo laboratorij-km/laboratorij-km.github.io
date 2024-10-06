@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="container-fluid p-0 m-0">
+  <div class="row">
+    <!-- Sub-navbar -->
+    <div class="col-lg-12">
+      <div id="navSub">
+        <ul class="nav">
+          <li class="sub-nav-item">
+            <a href="{{ "/research/research" | relURL}}">Research</a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="{{ "/research/collaboration" | relURL}}">Collaboration</a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="{{ "/research/guests" | relURL}}">Guests</a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="{{ "/research/projects" | relURL}}">Projects</a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="{{ "/research/selected_references" | relURL}}">Selected References</a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="http://mldmbook.fri.uni-lj.si/" target="_blank"
+              >MLDM book</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row">
+    <!-- Left side content -->
+    <div class="col-lg-12">{{.Content}}</div>
+  </div>
+</div>
+
+{{end}}

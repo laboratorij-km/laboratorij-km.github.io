@@ -5,19 +5,30 @@ theme = "site-theme"
 paginate = 3
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
+    name = "About"
+    pageRef = "/"
     weight = 1
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "People"
+    pageRef = "/people/"
     weight = 2
   [[menu.main]]
-    name = "Members"
-    url = "/members/"
+    name = "Research"
+    pageRef = "/research/research/"
     weight = 3
   [[menu.main]]
-    name = "Projects"
-    url = "/projects/" 
+    name = "Teaching"
+    pageRef = "/teaching/"
     weight = 4
+  [[menu.main]]
+    name = "Links"
+    pageRef = "/links/"
+    weight = 5
+  [[menu.main]]
+    name = "Photos"
+    pageRef = "/photos/"
+    weight = 6
+
+
+  
 

@@ -1,0 +1,173 @@
+{{ define "main" }}
+<div class="row">
+  <!-- Sub-navbar -->
+  <div class="col-lg-12">
+    <div id="navSub">
+      <ul class="nav">
+        <li class="sub-nav-item">
+          <a href="/"></a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="/about/presentations"></a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="/about/location"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <div class="row">
+    <!-- Member Cards Section -->
+    <div class="col-md-8">
+      <!-- Head Members -->
+      <h2 class="mb-3">Head</h2>
+      <div class="row">
+        {{ range .Site.Data.members.head_members }}
+        <div class="col-md-10 mb-4">
+          <div class="card h-100 d-flex flex-row">
+            <img
+              class="card-img-left"
+              src="{{ .image | relURL }}"
+              alt="{{ .name }}"
+              style="
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                margin-right: 15px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ .name }}</h5>
+              {{ if .title }}
+              <h6 class="card-subtitle mb-2 text-muted">{{ .title }}</h6>
+              {{ end }} {{ if .bio }}
+              <p class="card-text">{{ .bio }}</p>
+              {{ end }}
+              <div class="card-footer text-end">
+                <!-- Added text-end class -->
+                {{ if .relurl }}
+                <a href="{{ .relurl | relURL }}" class="btn btn-primary"
+                  >View More</a
+                >
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Staff Members -->
+      <h2 class="mt-5 mb-3">Staff, Researchers</h2>
+      <div class="row">
+        {{ range .Site.Data.members.staff_members }}
+        <div class="col-md-10 mb-4">
+          <div class="card h-100 d-flex flex-row">
+            <img
+              class="card-img-left"
+              src="{{ .image | relURL }}"
+              alt="{{ .name }}"
+              style="
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                margin-right: 15px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ .name }}</h5>
+              {{ if .title }}
+              <h6 class="card-subtitle mb-2 text-muted">{{ .title }}</h6>
+              {{ end }} {{ if .bio }}
+              <p class="card-text">{{ .bio }}</p>
+              {{ end }}
+              <div class="card-footer text-end">
+                <!-- Added text-end class -->
+                {{ if .relurl }}
+                <a href="{{ .relurl | relURL }}" class="btn btn-primary"
+                  >View More</a
+                >
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Visiting Members -->
+      <h2 class="mt-5 mb-3">Visiting Members</h2>
+      <div class="row">
+        {{ range .Site.Data.members.visiting_members }}
+        <div class="col-md-10 mb-4">
+          <div class="card h-100 d-flex flex-row">
+            <img
+              class="card-img-left"
+              src="{{ .image | relURL }}"
+              alt="{{ .name }}"
+              style="
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                margin-right: 15px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ .name }}</h5>
+              {{ if .title }}
+              <h6 class="card-subtitle mb-2 text-muted">{{ .title }}</h6>
+              {{ end }} {{ if .bio }}
+              <p class="card-text">{{ .bio }}</p>
+              {{ end }}
+              <div class="card-footer text-end">
+                <!-- Added text-end class -->
+                {{ if .relurl }}
+                <a href="{{ .relurl }}" class="btn btn-primary">View More</a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Overview Section on the Right Side -->
+    <div class="col-md-4">
+      <div class="bg-light p-3 border rounded">
+        <h2>In Brief</h2>
+
+        <h4>Head</h4>
+        {{ range .Site.Data.members.head_members }}
+        <p>
+          <a href="{{ .relurl | relURL }}">{{ .name }}</a><br />
+          {{ if .phone }}Tel.: {{ .phone }}<br />{{ end }} {{ if .contact }}<a
+            href="mailto:{{ .contact }}"
+            >e-mail</a
+          >{{ end }}
+        </p>
+        {{ end }}
+
+        <h4>Staff</h4>
+        {{ range .Site.Data.members.staff_members }}
+        <p>
+          <a href="{{ .relurl | relURL }}">{{ .name }}</a><br />
+          {{ if .phone }}Tel.: {{ .phone }}<br />{{ end }} {{ if .contact }}<a
+            href="mailto:{{ .contact }}"
+            >e-mail</a
+          >{{ end }}
+        </p>
+        {{ end }}
+
+        <h4>Visiting Members</h4>
+        <p>
+          {{ range .Site.Data.members.visiting_members }}{{ .name }}<br />{{ end
+          }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}

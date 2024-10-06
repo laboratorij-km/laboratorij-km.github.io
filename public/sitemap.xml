@@ -2,19 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/teaching/</loc>
+    <lastmod>2024-10-05T15:06:29+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/collaboration/</loc>
+    <lastmod>2024-10-05T13:36:26+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/guests/</loc>
+    <lastmod>2024-10-05T13:36:26+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/projects/</loc>
+    <lastmod>2024-10-05T13:36:26+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/research/</loc>
+    <lastmod>2024-10-05T13:36:26+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/</loc>
+    <lastmod>2024-10-05T13:36:26+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/selected_references/</loc>
+    <lastmod>2024-10-05T13:36:26+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/people/</loc>
+    <lastmod>2024-10-05T12:39:23+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-09-16T16:20:02+02:00</lastmod>
+    <lastmod>2024-10-05T12:06:31+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/location/</loc>
+    <lastmod>2024-10-05T12:06:31+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/presentations/</loc>
+    <lastmod>2024-10-05T12:06:19+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-08-30T14:44:25+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/project1/</loc>
-    <lastmod>2024-08-30T14:44:25+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-08-30T14:44:25+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/</loc>
   </url><url>
     <loc>http://localhost:1313/members/</loc>
   </url><url>
