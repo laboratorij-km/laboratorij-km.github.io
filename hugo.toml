@@ -2,6 +2,7 @@ baseURL = 'https://laboratorij-km.github.io/'
 languageCode = 'en-us'
 title = 'LKM site'
 theme = "site-theme"
+relativeURLs = true
 paginate = 3
 [menu]
   [[menu.main]]
