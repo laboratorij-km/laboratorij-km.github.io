@@ -1,7 +1,7 @@
 +++
 title = 'Presentations'
 date = 2024-10-05T12:06:19+02:00
-draft = true
+draft = false
 +++
 
 ### Presentation fliers

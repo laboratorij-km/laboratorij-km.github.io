@@ -1,7 +1,7 @@
 +++
 title = 'Research'
 date = 2024-10-05T13:36:26+02:00
-draft = true
+draft = false
 +++
 
 # Research
