@@ -7,28 +7,89 @@ paginate = 3
 [menu]
   [[menu.main]]
     name = "About"
-    pageRef = "/"
-    weight = 1
+    url = "/"
+    weight = 100
+    identifier = "about"  
+  
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 101
+    parent = "about"  
+
+  [[menu.main]]
+    name = "Presentations"
+    url = "/about/presentations/"
+    parent = "about"  
+    weight = 102
+
+  [[menu.main]]
+    name = "Location"
+    url = "/about/location/"
+    parent = "about"  
+    weight = 103
+
   [[menu.main]]
     name = "People"
-    pageRef = "/people/"
-    weight = 2
+    url = "/people/"
+    weight = 200
+  
   [[menu.main]]
     name = "Research"
-    pageRef = "/research/research/"
-    weight = 3
+    url = "/research/"
+    weight = 300
+    identifier = "research"  
+
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 301
+    parent = "research"  
+
+  [[menu.main]]
+    name = "Collaboration"
+    url = "/research/collaboration/"
+    parent = "research"  
+    weight = 302
+  
+  [[menu.main]]
+    name = "Guests"
+    url = "/research/guests/"
+    parent = "research"
+    weight = 303
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/research/projects/"
+    parent = "research"
+    weight = 304
+
+  [[menu.main]]
+    name = "Selected References"
+    url = "/research/selected_references/"
+    parent = "research"
+    weight = 305
+
+  [[menu.main]]
+    name = "MLDM book"
+    url = "http://mldmbook.fri.uni-lj.si/"
+    parent = "research"
+    weight = 306
+  
   [[menu.main]]
     name = "Teaching"
-    pageRef = "/teaching/"
-    weight = 4
+    url = "/teaching/"
+    weight = 400
+
   [[menu.main]]
     name = "Links"
-    pageRef = "/links/"
-    weight = 5
+    url = "/links/"
+    weight = 500
+
   [[menu.main]]
-    name = "Photos"
-    pageRef = "/photos/"
-    weight = 6
+    name = "Gallery"
+    url = "/gallery/"
+    weight = 600
 
 
   

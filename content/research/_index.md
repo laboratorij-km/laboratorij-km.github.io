@@ -10,7 +10,9 @@ draft = true
 
 Machine learning and data mining search for regularities in moderate to large databases by learning models of data. Generated models can be used for explanation of data, simulations, process control, prediction, and solving new related problems. An example is medical diagnostics, where from previously diagnosed patients a model for diagnosing new, previously unseen patients can be derived. Similar approaches can also be used in insurance or banking businesses, where predictive models can be used for detecting unusual or interesting patterns in a day-to-day business process.
 
-![](lkm-chart.png)
+<!-- ![](lkm-chart.png) -->
+
+{{< image src="lkm-chart.png" alt="lkm chart" class="img-fluid"  >}}
 
 # Infrastructure
 
@@ -86,9 +88,13 @@ RAM: 2 TB
 
 SSD: 20 TB
 
-![](C75T1877.JPG)
+<!-- ![](C75T1877.JPG) -->
 
-![](zabice.JPG)
+<!-- ![](zabice.JPG) -->
+
+{{< image src="C75T1877.jpg" alt="Img" class="img-fluid"  >}}
+
+{{< image src="zabice.jpg" alt="Zabice" class="img-fluid" >}}
 
 # Topics of Research
 

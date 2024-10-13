@@ -14,9 +14,6 @@
     <loc>http://localhost:1313/research/projects/</loc>
     <lastmod>2024-10-05T13:36:26+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/research/</loc>
-    <lastmod>2024-10-05T13:36:26+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/research/</loc>
     <lastmod>2024-10-05T13:36:26+02:00</lastmod>
   </url><url>
@@ -40,9 +37,9 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/links/</loc>
+    <loc>http://localhost:1313/gallery/</loc>
   </url><url>
-    <loc>http://localhost:1313/members/</loc>
+    <loc>http://localhost:1313/links/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>

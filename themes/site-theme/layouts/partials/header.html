@@ -1,42 +1,61 @@
-<div id="masthead" class="container-fluid border-bottom" style="padding-left: 100px;">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Faculty logo on the left -->
-      <div class="col-md-4 text-left">
+<div id="masthead" class="container-fluid border-bottom">
+  <div class="">
+    <nav class="navbar navbar-expand-lg ">
+      <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="">
         <a href="{{ "" | relURL }}">
           <img src="{{ "img/logos/lkm-logo.png" | relURL }}" alt="Faculty Logo" class="img-fluid" style="max-height: 100px;">
         </a>
       </div>
-  
-     <!-- Empty space or optional content -->
-     <div class="col-md-4"></div>
-  
-      <div class="col-md-4 text-right">
-          <img src="{{ "img/logos/fri_logo_trans.png" | relURL }}" alt="Faculty Logo" class="img-fluid" style="max-height: 100px;">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          {{ $currentPage := . }} 
+          {{ range .Site.Menus.main.ByWeight }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a
+              class='nav-link dropdown-toggle {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active {{ end }}'
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {{ .Name }}
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              {{ range .Children }}
+              <li>
+                <a
+                  class='dropdown-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active {{ end }}'
+                  href="{{ .URL }}"
+                >
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a
+              class='nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active {{ end }}'
+              href="{{ absURL .URL }}"
+            >
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }} 
+          {{ end }}
+        </ul>
+       
       </div>
-  
-      
-    </div>
-  
-   <!-- Menu positioned below the logos -->
-   <div class="row">
-    <div class="col-md-12 text-center">
-      <nav id="nav" class="navbar navbar-expand-lg navbar-light">
-        <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
-          <ul class="navbar-nav ml-auto nav-tabs">
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            <li class="nav-item">
-              <a class="nav-link {{ if $currentPage.IsMenuCurrent .Menu .}}active{{ end }}" href="{{ .URL }}">
-                {{ .Name }}
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-        <!-- </div> -->
-      </nav>
-    </div>
+      <div class=" px-5 d-none d-lg-block">
+        <img src="{{ "img/logos/fri_logo_trans.png" | relURL }}" alt="Faculty Logo" class="img-fluid" style="max-height: 100px;">
+      </div>
+    </nav>
   </div>
-  </div>
-  
 </div>

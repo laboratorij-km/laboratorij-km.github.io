@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body class="h-100">
+  <body>
     {{- partial "header.html" . -}}
     <div id="content">{{- block "main" . }}{{- end }}</div>
-    {{- partial "footer.html" . -}} {{- partial "script.html" . -}}
-    <script src="{{ "js/bootstrap.min.js" |
+    {{- partial "footer.html" . -}}
+    <script src="{{ "js/bootstrap.bundle.min.js" |
     relURL}}"></script>
   </body>
 </html>

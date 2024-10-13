@@ -1,9 +1,9 @@
 {{ define "main" }}
-<article>
-  <header>
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Params.description }}</p>
-  </header>
-  <section>{{ .Content }}</section>
-</article>
-{{ end }}
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-8">{{.Content}}</div>
+  </div>
+</div>
+
+{{end}}
