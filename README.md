@@ -1,147 +1,257 @@
-# Navodila za člane laboratorija
+# Navodila za nastavitev osebne Hugo strani laboratorija
 
-Dobrodošli v repozitoriju za laboratorij! Ta repozitorij uporablja Hugo za izdelavo spletne strani s pomočjo GitHub Pages. V tem dokumentu so podrobna navodila, kako nastaviti svoj repozitorij, ustvariti objave, in poskrbeti, da bo vaša vsebina pravilno prikazana na spletni strani laboratorija.
+V tem dokumentu so navedena navodila, kako nastaviti in uporabljati svojo Hugo stran za laboratorij. Vsak član laboratorija bo imel svojo Hugo stran, ki bo gostovana pod domeno **laboratorij-km.github.io/member_repository**.
 
-## 1. Ustvarite osebni repozitorij iz predloge
+## 1. Kopiranje predloga repozitorija
 
-1. **Ustvarite repozitorij**:
+1. Prijavite se v GitHub in pojdite na GitHub organizacijo laboratorija.
+2. Odprite [predlogo Hugo strani](https://github.com/laboratorij-km/member-template), ki je na voljo v repozitoriju.
+3. Kliknite gumb **Use this template**.
+4. Ustvarite novo ime za vaš osebni repozitorij. Priporočljivo je, da uporabite svoje osebno ime, na primer: **ime-priimek**
+5. Preverite, da je izbrana možnost Public repository, in kliknite Create repository
 
-   - Uporabite predlogo repozitorija za člane laboratorija, ki je bila pripravljena, da pospeši postopek nastavitve.
-   - Obiščite predlogo in kliknite **Use this template**, da ustvarite svoj osebni repozitorij na podlagi te predloge.
+## 2. Kloniranje repozitorija
 
-2. **Klonirajte repozitorij lokalno**:
+1. Odprite terminal ali ukazno vrstico in klonirajte svoj novoustvarjeni repozitorij na lokalni računalnik:
 
-   - Po ustvarjanju repozitorija ga klonirajte na svojo lokalno napravo:
-     ```bash
-     git clone https://github.com/vaš-uporabniški-ime/ime-repozitorija.git
-     ```
+```bash
+git clone https://github.com/laboratorij-km/ime-priimek.git
+```
 
-3. **Konfiguracija v lokalnem okolju**:
-   - Prepričajte se, da imate nameščen Hugo (če ga še nimate, sledite [navodilom](https://gohugo.io/getting-started/installing/)).
-   - Po kloniranju repozitorija, odprite mapo in zaženite lokalni strežnik za predogled:
-     ```bash
-     cd ime-repozitorija
-     hugo server
-     ```
-   - Spletno mesto bo na voljo na naslovu `http://localhost:1313`.
+2. Premaknite se v imenik repozitorija:
 
-## 2. Osebni dostopni žeton (PAT)
+```bash
+cd ime-priimek
+```
 
-Ker bo root repozitorij kloniral vsebino vašega repozitorija med gradnjo spletne strani, morate ustvariti osebni dostopni žeton (PAT) in ga posredovati administratorju.
+## 3. Urejanje osebne vsebine
 
-1. **Ustvarite nov PAT**:
+Vse spremembe boste izvajali znotraj svojega repozitorija. Vaša osebna stran v Hugo je zasnovana tako, da omogoča preprosto upravljanje vsebin. Spodaj so podana navodila za pisanje objav in nastavitev strani. Pri urejanju vsebine v Markdownu lahko uporabite HTML v Markdown converter-ji, kot je npr. **[https://htmlmarkdown.com/](https://htmlmarkdown.com/)**, če imate vsebino v HTML obliki, ki jo želite pretvoriti.
 
-   - Pojdite na svoj profil na [GitHub](https://github.com) in izberite **Settings**.
-   - V meniju na levi izberite **Developer settings** > **Personal access tokens**.
-   - Kliknite **Generate new token**.
-   - Dodajte opis (npr. "Dostop za root repozitorij") in označite naslednje pravice:
-     - **repo** (za dostop do zasebnih repozitorijev)
-     - **workflow** (za omogočanje GitHub Actions)
-   - Kliknite **Generate token** in kopirajte žeton.
+### 1. Urejanje glavne biografije
 
-2. **Posredovanje žetona**:
-   - Posredujte administratorju root repozitorija vaš PAT, da ga lahko shrani kot skrivnost (`Secret`) v root repozitoriju. Administrator bo dodal vaš PAT v GitHub Secrets, da bo omogočen dostop do vašega repozitorija.
+Glavna biografija vsakega člana je v datoteki **content/\_index.md**. Ta datoteka predstavlja vašo domačo stran in vsebino, ki bo vidna ob obisku vašega profila.
 
-## 3. Spremembe v root repozitoriju
+#### Kako urediti biografijo:
 
-Po nastavitvi vašega repozitorija in posredovanju PAT, bo moral administrator root repozitorija prilagoditi GitHub Actions skripto, da bo vsebina iz vašega repozitorija vključena na glavno spletno stran.
+1. Odprite datoteko **content/\_index.md**.
+2. Vnesite ali uredite svojo biografijo. Uporabite Markdown za formatiranje besedila.
 
-1. **Posodobitev GitHub Actions skripte**:
+Primer vsebine:
 
-   - Administrator mora odpreti `.github/workflows/deploy.yml` v root repozitoriju in dodati naslednjo vrstico, ki omogoča kloniranje vašega repozitorija:
-     ```bash
-     git clone https://${{ secrets.MEMBER1_PAT }}@github.com/vaše-uporabniško-ime/ime-repozitorija.git content/members/vaše-uporabniško-ime/
-     ```
+```markdown
++++
+title = "Ime Priimek"
++++
 
-2. **Prilagoditev navigacije**:
-   - Administrator bo dodal vaš profil v **Seznam članov**, ki bo prikazan na glavni strani spletnega mesta.
+# Dobrodošli
 
-## 4. Določite svojo biografijo
+Sem Ime Priimek, raziskovalec v Laboratoriju za kognitivno modeliranje.
+```
 
-- Ustvarite datoteko `config.toml` v svojem repozitoriju, kjer lahko definirate podatke o sebi, na primer:
-  ```toml
-  bio = "Sem član laboratorija in me zanima področje umetne inteligence."
-  cover = "/pot-do-slike-profila.jpg"
-  ```
+### 2. Ustvarjanje novih strani
 
-## Nastavitev osebnega dostopnega žetona (PAT)
+Vsaka dodatna stran, ki jo želite imeti na svojem profilu, potrebuje svojo mapo in datoteko \_index.md.
 
-Za omogočanje root repozitoriju, da dostopa do vašega repozitorija, potrebujete osebni dostopni žeton (PAT). Tukaj so koraki:
+#### Koraki za ustvarjanje nove strani:
 
-1. **Ustvarite nov PAT**:
+1. Če želite ustvariti novo stran, na primer **"Lecturing"**, ustvarite naslednjo strukturo:
+   - **content/lecturing/\_index.md**
+2. Za vsako podstran znotraj te strani (npr. posamezni predmeti) lahko ustvarite dodatne datoteke, na primer:
+   - **content/lecturing/subject1.md**
 
-   - Pojdite na svoj profil na [GitHub](https://github.com) in izberite **Settings**.
-   - V meniju na levi izberite **Developer settings** > **Personal access tokens**.
-   - Kliknite **Generate new token**.
-   - Dajte žetonu opis (npr. "Dostop za root repozitorij") in izberite:
-     - **repo** (za dostop do zasebnih repozitorijev)
-     - **workflow** (za omogočanje GitHub Actions)
-   - Kliknite **Generate token** in kopirajte žeton na varno mesto.
+#### Primer nove strani **"Lecturing"**
 
-2. **Shranjevanje PAT v root repozitorij**:
-   - Pošljite administratorju root repozitorija svoj PAT, da ga shrani v GitHub Secrets.
+```bash
+hugo new content/lecturing/_index.md
+```
 
-## Spremembe v root repozitoriju
+#### Vsebina **content/lecturing/\_index.md**:
 
-Ko ustvarite svoj repozitorij, mora administrator root repozitorija izvesti naslednje korake:
+```markdown
++++
+title = "Lecturing"
++++
 
-1. **Posodobitev GitHub Actions skripte**:
+# Moji predmeti
 
-   - V root repozitoriju odprite `.github/workflows/deploy.yml`.
-   - Dodajte naslednjo vrstico za kloniranje vašega repozitorija:
-     ```bash
-     git clone https://${{ secrets.MEMBER1_PAT }}@github.com/username-content.git content/members/username/
-     ```
+Tukaj so navedeni predmeti, ki jih predavam.
 
-2. **Prilagoditev navigacije**:
-   - Poskrbite, da bo vaš profil pravilno dodan na **Seznam članov** v root repozitoriju, če je potrebno.
+1. [Subject 1]({{< relref "subject1.md" >}})
+2. [Subject 2]({{< relref "subject2.md" >}})
+```
 
-## Ustvarjanje objav
+#### Vsebina **content/lecturing/subject1.md**:
 
-1. **Dodajanje nove objave**:
-
-   - V svojem repozitoriju ustvarite mapo za novo objavo pod `content/post/` in ustvarite datoteko `index.md` z vsebino vaše objave.
-   - Primer:
-
-     ```
-     content/
-       post/
-         druga-objava/
-           index.md
-     ```
-
-   - Datoteka `index.md`:
-
-     ```markdown
-     ---
-     title: "Naslov moje druge objave"
-     date: 2024-09-15
-     author: "Vaše ime"
-     cover: "/pot-do-slike.jpg"
-     ---
-
-     Vsebina moje druge objave.
-     ```
-
-2. **Push spremembe**:
-
-   - Ko končate z urejanjem, push-ajte svoje spremembe na GitHub:
-     ```bash
-     git add .
-     git commit -m "Dodana nova objava"
-     git push origin main
-     ```
-
-3. **Objave in prikaz**:
-   - Vaše objave bodo samodejno vključene na vašo stran v root repozitoriju ob naslednjem zagonu GitHub Actions.
-
-## Urejanje biografije
-
-1. **Posodobitev biografije**:
-
-   - Če želite posodobiti svojo biografijo ali slike, uredite datoteko `config.toml` v svojem repozitoriju.
-
-2. **Struktura biografije**:
-   - Prepričajte se, da vsebuje informacije, kot so `bio`, `cover` (pot do slike) in drugi podatki, ki jih želite prikazati na svoji osebni strani.
-
+```markdown
 ---
+title = "Predmet 1"
+---
+
+# Opis predmeta 1
+
+Podroben opis predmeta.
+```
+
+### 3. Dodajanje datotek in slik
+
+Vsaka stran na vašem profilu naj vsebuje pripadajoče datoteke, kot so slike, v isti mapi, kjer se nahaja vsebina strani. Na ta način bodo slike in druge datoteke ustrezno povezane s posamezno stranjo.
+
+#### Koraki za dodajanje slik na stran:
+
+1. Če želite dodati sliko na stran, na primer na glavno stran Lecturing (content/lecturing/\_index.md), morate sliko shraniti v isto mapo.
+
+- Primer: **content/lecturing/img.jpg** ali **content/lecturing/images/img.jpg**
+
+2. Nato v vaši Markdown datoteki (npr. **content/lecturing/\_index.md**) vključite sliko z naslednjim ukazom:
+
+```markdown
+![Opis slike](img.jpg)
+ali
+![Opis slike](img/img.jpg)
+```
+
+### 4. Urejanje datoteke hugo.toml
+
+Vsakič, ko dodate novo stran, morate posodobiti datoteko hugo.toml, da se nova stran prikaže v meniju. Poleg tega morate prilagoditi naslov, baseURL, in meni.
+
+#### Koraki za urejanje:
+
+1. Odprite datoteko **hugo.toml** v korenu svojem repozitoriju.
+2. Spremenite osnovne nastavitve strani:
+   - **baseURL**: Tukaj vnesite URL vašega repozitorija. Nadomestite ime-priimek z imenom vašega repozitorija.
+   - **title**: Vnesite naslov svoje strani.
+   - **menu**: Dodajte nove strani v meni.
+
+#### Dodajanje novega menija:
+
+Če želite dodati novo stran v meni, na primer za "Raziskave", ki se nahaja v **content/research/\_index.md**, v datoteko hugo.toml dodajte nov vnos:
+
+```toml
+  [[menu.main]]
+    name = "Raziskave"
+    url = "/research/"
+    weight = 4
+```
+
+#### Primer urejene datoteke **hugo.toml**:
+
+```toml
+baseURL = 'https://laboratorij-km.github.io/ime-priimek/'  # Spremenite ime repozitorija
+languageCode = 'en-us'
+title = 'Ime Priimek'
+theme = "member-theme"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Lecturing"
+    url = "/lecturing/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projekti"
+    url = "/projects/"
+    weight = 3
+
+```
+
+### 5. Testiranje lokalnih sprememb
+
+Preden pošljete svoje spremembe v GitHub, je priporočljivo, da svojo stran preizkusite lokalno z ukazom Hugo, kar vam omogoča hitrejši pregled in odkrivanje morebitnih napak.
+
+#### 5.1 Uporaba "hugo server"
+
+Ukaz **"hugo server"** vam omogoča, da zaženete lokalni strežnik, kjer lahko pregledate svojo stran, ne da bi jo objavili.
+
+**Kako uporabiti hugo server:**
+
+1. Odprite terminal ali ukazno vrstico v korenskem direktoriju vašega Hugo repozitorija.
+2. Zaženite naslednji ukaz:
+
+```bash
+hugo server
+```
+
+Ta ukaz bo ustvaril lokalni strežnik, ki bo na voljo na naslovu http://localhost:1313/. Stran bo samodejno osvežena, če boste v datotekah izvedli spremembe. To vam omogoča hitrejše testiranje vsebine.
+
+#### 5.2 Uporaba "hugo server -D"
+
+Ko razvijate novo vsebino, lahko želite testirati strani ali objave, ki še niso objavljene, ker so označene kot osnutki. V ta namen uporabite ukaz **"hugo server -D"**, ki omogoča prikaz osnutkov.
+
+**Kako uporabiti "hugo server -D":**
+
+1. Če imate osnutke, ki jih želite pregledati pred objavo, zaženite naslednji ukaz:
+
+```bash
+hugo server -D
+```
+
+S tem ukazom bodo vidne tudi vse strani ali objave, ki imajo v svojem frontmatter parametru draft = true.
+
+#### 5.3 Kaj pomeni parameter "draft"?
+
+V vsaki objavi ali strani, ki jo ustvarite v Hugo, lahko uporabite parameter draft, ki določa, ali je stran pripravljena za objavo ali je še v fazi osnutka.
+
+Primer parametra **draft** v frontmatter:
+
+```markdown
++++
+title = "Moj prvi projekt"
+date = 2024-10-10
+draft = true
++++
+```
+
+- Če je **draft = true**, bo stran skrita in ne bo objavljena na produkcijski strani.
+- Če je **draft = false**, bo stran vidna in objavljena na vaši spletni strani.
+
+Ko ste pripravljeni, da stran objavite, preprosto spremenite vrednost parametra **draft** na **false**, nato pa lahko svojo stran testirate lokalno z hugo server ali naložite spremembe na GitHub.
+
+## 4. Dodajanje profila v glavni repozitorij
+
+1. Pojdite na glavni repozitorij laboratorija laboratorij-km.github.io.
+2. Poiščite datoteko **data/members.yaml**, kjer se hranijo podatki o vseh članih laboratorija.
+3. Dodajte svoje podatke, kot v spodnjem primeru:
+
+```yaml
+staff_members:
+  - name: "Ime Priimek"
+    bio: "Vaša kratka biografija."
+    image: "img/people/vaša_slika.jpg"
+    contact: "vaš_email@example.com"
+    relurl: "ime-priimek/"
+    phone: vaša telefonska številka
+```
+
+4. V datoteko **static/img/people/** dodajte svojo sliko profila. Prepričajte se, da ime slike ustreza tistemu, kar ste vnesli v **data/members.yaml**.
+
+## 5. GitHub Actions: Samodejna gradnja in objava
+
+Ko naredite spremembe na svoji strani in jih naložite v GitHub, ni potrebno ročno graditi strani ali jih nalagati na strežnik. Za to skrbi datoteka z GitHub Actions, ki se nahaja v **.github/workflows/hugo.yaml**.
+
+### Kaj dela ta datoteka:
+
+- Ob vsakem "push" na glavno vejo (**main**) se vaša stran samodejno zgradi in objavi.
+
+- Uporablja Hugo za gradnjo statične strani in jo nato objavi na GitHub Pages.
+
+- Postopek zajema namestitev Hugo, sestavo statične strani in objavo na GitHub Pages, kjer bo vaša stran dostopna.
+
+Zato vam ni treba skrbeti za ročno upravljanje strežnika ali nalaganje strani. Vse se dogaja samodejno ob vsaki spremembi, ki jo pošljete v svoj repozitorij.
+
+## 6. Posodabljanje in objavljanje
+
+Po urejanju datotek in ustvarjanju novih vsebin, zaženite naslednje ukaze, da pošljete spremembe v repozitorij:
+
+```bash
+git add .
+git commit -m "Dodana nova stran in objava"
+git push
+```
+
+To bo sprožilo postopek gradnje in objave preko GitHub Actions. Vaša stran bo posodobljena in dostopna na naslovu: https://laboratorij-km.github.io/ime-priimek/.
