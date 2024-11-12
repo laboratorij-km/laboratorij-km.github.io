@@ -13,7 +13,7 @@ staff_members:
     bio: "Matjaž Kukar received his Ph.D. degree in computer science in 2001 from the University of Ljubljana. He has B.Sc. and M.Sc. degrees from the same university. He is an associate professor at the Laboratory for Cognitive Modelling. His research interests include machine learning, data mining and their applications in medicine, ROC analysis, cost-sensitive learning, combinations of classifiers, classification reliability in machine learning, and spatial learning. He is the co-author of the book Machine Learning and Data Mining: Introduction to Principles and Algorithms (with Igor Kononenko) and more than 60 scientific publications in these fields."
     image: "img/people/IMG_5167.jpg"
     contact: "matjaz.kukar@fri.uni-lj.si"
-    relurl: "lab_member2/"
+    relurl: "matjaz.kukar/"
     phone: +386 1 4798 235
 
   - name: "Prof. dr. Marko Robnik Šikonja"
