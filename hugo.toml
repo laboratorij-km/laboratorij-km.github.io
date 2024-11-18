@@ -1,95 +1,299 @@
 baseURL = 'https://laboratorij-km.github.io/'
-languageCode = 'en-us'
+# languageCode = 'en-us'
 title = 'LKM site'
 theme = "site-theme"
 relativeURLs = true
 paginate = 3
-[menu]
-  [[menu.main]]
-    name = "About"
-    url = "/"
-    weight = 100
-    identifier = "about"  
+
+
+[languages]
+  [languages.en]
+    contentDir = 'content/english'
+    languageName = 'English'
+    weight = 10
+    [languages.en.params]
+      flag = "flag-icon-us"
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = "About"
+        url = "/"
+        weight = 100
+        identifier = "about"  
+      
+      [[languages.en.menus.main]]
+        name = "About"
+        url = "/"
+        weight = 101
+        parent = "about"  
+
+      [[languages.en.menus.main]]
+        name = "Presentations"
+        url = "/about/presentations/"
+        parent = "about"  
+        weight = 102
+
+      # [[languages.en.menus.main]]
+      #   name = "Location"
+      #   url = "/about/location/"
+      #   parent = "about"  
+      #   weight = 103
+
+      [[languages.en.menus.main]]
+        name = "People"
+        url = "/people/"
+        weight = 200
+      
+      [[languages.en.menus.main]]
+        name = "Research"
+        url = "/research/"
+        weight = 300
+        identifier = "research"  
+
+      [[languages.en.menus.main]]
+        name = "Research"
+        url = "/research/"
+        weight = 301
+        parent = "research"  
+
+      [[languages.en.menus.main]]
+        name = "Collaboration"
+        url = "/research/collaboration/"
+        parent = "research"  
+        weight = 302
+      
+      [[languages.en.menus.main]]
+        name = "Guests"
+        url = "/research/guests/"
+        parent = "research"
+        weight = 303
+
+      [[languages.en.menus.main]]
+        name = "Projects"
+        url = "/research/projects/"
+        parent = "research"
+        weight = 304
+
+      [[languages.en.menus.main]]
+        name = "Selected References"
+        url = "/research/selected_references/"
+        parent = "research"
+        weight = 305
+
+      [[languages.en.menus.main]]
+        name = "MLDM book"
+        url = "http://mldmbook.fri.uni-lj.si/"
+        parent = "research"
+        weight = 306
+      
+      [[languages.en.menus.main]]
+        name = "Teaching"
+        url = "/teaching/"
+        weight = 400
+
+      [[languages.en.menus.main]]
+        name = "Links"
+        url = "/links/"
+        weight = 500
+
+      [[languages.en.menus.main]]
+        name = "Gallery"
+        url = "/gallery/"
+        weight = 600
+
+      [[languages.en.menus.main]]
+        name = "Shiny"
+        url = "/shiny/"
+        weight = 700
+  [languages.si]
+        contentDir = 'content/slovene'
+        languageName = 'Slovene'
+        weight = 20
+        [languages.si.params]
+          flag = "flag-icon-si"
+      [languages.si.menus]
+          [[languages.si.menus.main]]
+            name = "O nas"
+            url = "/"
+            weight = 100
+            identifier = "about"  
+            
+            [[languages.si.menus.main]]
+            name = "O nas"
+            url = "/si/"
+            weight = 101
+            parent = "about"  
+
+            [[languages.si.menus.main]]
+            name = "Predstavitve"
+            url = "/si/about/presentations/"
+            parent = "about"  
+            weight = 102
+
+            # [[languages.si.menus.main]]
+            # name = "Lokacija"
+            # url = "/about/location/"
+            # parent = "about"  
+            # weight = 103
+
+            [[languages.si.menus.main]]
+            name = "Člani"
+            url = "/si/people/"
+            weight = 200
+            
+            [[languages.si.menus.main]]
+            name = "Raziskave"
+            url = "/si/research/"
+            weight = 300
+            identifier = "research"  
+
+            [[languages.si.menus.main]]
+            name = "Raziskave"
+            url = "/si/research/"
+            weight = 301
+            parent = "research"  
+
+            [[languages.si.menus.main]]
+            name = "Sodelovanje"
+            url = "/si/research/collaboration/"
+            parent = "research"  
+            weight = 302
+            
+            [[languages.si.menus.main]]
+            name = "Gostje"
+            url = "/si/research/guests/"
+            parent = "research"
+            weight = 303
+
+            [[languages.si.menus.main]]
+            name = "Projekti"
+            url = "/si/research/projects/"
+            parent = "research"
+            weight = 304
+
+            [[languages.si.menus.main]]
+            name = "Izbrane reference"
+            url = "/si/research/selected_references/"
+            parent = "research"
+            weight = 305
+
+            [[languages.si.menus.main]]
+            name = "MLDM knjiga"
+            url = "http://mldmbook.fri.uni-lj.si/"
+            parent = "research"
+            weight = 306
+            
+            [[languages.si.menus.main]]
+            name = "Poučevanje"
+            url = "/si/teaching/"
+            weight = 400
+
+            [[languages.si.menus.main]]
+            name = "Povezave"
+            url = "/si/links/"
+            weight = 500
+
+            [[languages.si.menus.main]]
+            name = "Galerija"
+            url = "/si/gallery/"
+            weight = 600
+         
+
+[markup.goldmark.renderer] 
+  unsafe= true
   
-  [[menu.main]]
-    name = "About"
-    url = "/"
-    weight = 101
-    parent = "about"  
-
-  [[menu.main]]
-    name = "Presentations"
-    url = "/about/presentations/"
-    parent = "about"  
-    weight = 102
-
-  [[menu.main]]
-    name = "Location"
-    url = "/about/location/"
-    parent = "about"  
-    weight = 103
-
-  [[menu.main]]
-    name = "People"
-    url = "/people/"
-    weight = 200
+# [menu]
+#   [[menu.main]]
+#     name = "About"
+#     url = "/"
+#     weight = 100
+#     identifier = "about"  
   
-  [[menu.main]]
-    name = "Research"
-    url = "/research/"
-    weight = 300
-    identifier = "research"  
+#   [[menu.main]]
+#     name = "About"
+#     url = "/"
+#     weight = 101
+#     parent = "about"  
 
-  [[menu.main]]
-    name = "Research"
-    url = "/research/"
-    weight = 301
-    parent = "research"  
+#   [[menu.main]]
+#     name = "Presentations"
+#     url = "/about/presentations/"
+#     parent = "about"  
+#     weight = 102
 
-  [[menu.main]]
-    name = "Collaboration"
-    url = "/research/collaboration/"
-    parent = "research"  
-    weight = 302
+#   [[menu.main]]
+#     name = "Location"
+#     url = "/about/location/"
+#     parent = "about"  
+#     weight = 103
+
+#   [[menu.main]]
+#     name = "People"
+#     url = "/people/"
+#     weight = 200
   
-  [[menu.main]]
-    name = "Guests"
-    url = "/research/guests/"
-    parent = "research"
-    weight = 303
+#   [[menu.main]]
+#     name = "Research"
+#     url = "/research/"
+#     weight = 300
+#     identifier = "research"  
 
-  [[menu.main]]
-    name = "Projects"
-    url = "/research/projects/"
-    parent = "research"
-    weight = 304
+#   [[menu.main]]
+#     name = "Research"
+#     url = "/research/"
+#     weight = 301
+#     parent = "research"  
 
-  [[menu.main]]
-    name = "Selected References"
-    url = "/research/selected_references/"
-    parent = "research"
-    weight = 305
-
-  [[menu.main]]
-    name = "MLDM book"
-    url = "http://mldmbook.fri.uni-lj.si/"
-    parent = "research"
-    weight = 306
+#   [[menu.main]]
+#     name = "Collaboration"
+#     url = "/research/collaboration/"
+#     parent = "research"  
+#     weight = 302
   
-  [[menu.main]]
-    name = "Teaching"
-    url = "/teaching/"
-    weight = 400
+#   [[menu.main]]
+#     name = "Guests"
+#     url = "/research/guests/"
+#     parent = "research"
+#     weight = 303
 
-  [[menu.main]]
-    name = "Links"
-    url = "/links/"
-    weight = 500
+#   [[menu.main]]
+#     name = "Projects"
+#     url = "/research/projects/"
+#     parent = "research"
+#     weight = 304
 
-  [[menu.main]]
-    name = "Gallery"
-    url = "/gallery/"
-    weight = 600
+#   [[menu.main]]
+#     name = "Selected References"
+#     url = "/research/selected_references/"
+#     parent = "research"
+#     weight = 305
+
+#   [[menu.main]]
+#     name = "MLDM book"
+#     url = "http://mldmbook.fri.uni-lj.si/"
+#     parent = "research"
+#     weight = 306
+  
+#   [[menu.main]]
+#     name = "Teaching"
+#     url = "/teaching/"
+#     weight = 400
+
+#   [[menu.main]]
+#     name = "Links"
+#     url = "/links/"
+#     weight = 500
+
+#   [[menu.main]]
+#     name = "Gallery"
+#     url = "/gallery/"
+#     weight = 600
+
+#   [[menu.main]]
+#     name = "Shiny"
+#     url = "/shiny/"
+#     weight = 700
+
+  
 
 
   

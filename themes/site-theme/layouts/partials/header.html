@@ -1,19 +1,27 @@
 <div id="masthead" class="container-fluid border-bottom">
   <div class="">
-    <nav class="navbar navbar-expand-lg ">
-      <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler mx-5"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="">
-        <a href="{{ "" | relURL }}">
-          <img src="{{ "img/logos/lkm-logo.png" | relURL }}" alt="Faculty Logo" class="img-fluid" style="max-height: 100px;">
+        <a href="{{ .Site.BaseURL }}{{ .Lang }}/">
+          <img src="{{ "img/logos/MLLT-logo.png" | relURL }}" alt="Faculty Logo"
+          class="img-fluid" style="max-height: 150px;">
         </a>
       </div>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
-          {{ $currentPage := . }} 
-          {{ range .Site.Menus.main.ByWeight }}
-          {{ if .HasChildren }}
+          {{ $currentPage := . }} {{ range .Site.Menus.main.ByWeight }} {{ if
+          .HasChildren }}
           <li class="nav-item dropdown">
             <a
               class='nav-link dropdown-toggle {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active {{ end }}'
@@ -48,13 +56,26 @@
               {{ .Name }}
             </a>
           </li>
-          {{ end }} 
+          {{ end }} {{ end }}
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          {{ range $.Site.Home.AllTranslations }}
+          <li class="nav-item">
+            <a
+              class="nav-link {{ if eq .Language.Lang $.Site.Language.Lang }}lang-active{{ end }}"
+              href="{{ .RelPermalink }}"
+            >
+              <span class="flag-icon {{ .Language.Params.flag }}"></span> {{
+              .Language.LanguageName }}
+            </a>
+          </li>
           {{ end }}
         </ul>
-       
       </div>
-      <div class=" px-5 d-none d-lg-block">
-        <img src="{{ "img/logos/fri_logo_trans.png" | relURL }}" alt="Faculty Logo" class="img-fluid" style="max-height: 100px;">
+      <div class="px-5 d-none d-lg-block">
+        <img src="{{ "img/logos/fri_logo_trans.png" | relURL }}" alt="Faculty
+        Logo" class="img-fluid" style="max-height: 100px;">
       </div>
     </nav>
   </div>
