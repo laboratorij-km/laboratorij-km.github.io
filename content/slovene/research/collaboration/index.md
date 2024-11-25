@@ -1,58 +1,55 @@
 +++
-title = 'Collaboration'
-date = 2024-10-05T13:36:26+02:00
+title = 'Sodelovanje'
 draft = false
 +++
 
-SLOVENE
+# Sodelovanje z akademskimi ustanovami
 
-# Collaboration with academic institutions
-
-- KU Leuven, Belgium
-- University of Newcastle, Australia
-- Technical University Graz, Austria
-- South East European University, Macedonia
-- TU Darmstadt, Germany
-- University of Prizren, Kosovo
-- University of Kragujevac, Serbia
-- University of Hasselt, Belgium
-- ASCR Institute of Computer Science, Czech Republic
-- University of Malaga, Spain
-- University of Porto, Portugal
-- University of Ioannina, Greece
-- Biotehnical Faculty, University of Ljubljana
-- Faculty of Arts, University of Ljubljana
-- FRI, Computer Vision Lab and Artificial Intelligence Lab
-- University of Split, Croatia
-- University of Novi sad, Serbia
+- KU Leuven, Belgija
+- University of Newcastle, Avstralija
+- Tehnična univerza Gradec, Avstrija
+- Univerza Jugovzhodne Evrope, Makedonija
+- TU Darmstadt, Nemčija
+- Univerza v Prizrenu, Kosovo
+- Univerza v Kragujevcu, Srbija
+- Univerza v Hasseltu, Belgija
+- ASCR Inštitut za računalništvo, Češka
+- Univerza v Malagi, Španija
+- Univerza v Portu, Portugalska
+- Univerza v Ioannini, Grčija
+- Biotehniška fakulteta, Univerza v Ljubljani
+- Filozofska fakulteta, Univerza v Ljubljani
+- FRI, Laboratorij za računalniški vid in Laboratorij za umetno inteligenco
+- Univerza v Splitu, Hrvaška
+- Univerza v Novem Sadu, Srbija
 
 ![](lkm-collab.png)
 
-# Collaboration with research institutions
+# Sodelovanje z raziskovalnimi ustanovami
 
-- Jozef Stefan Institute; Department of knowledge technologies, Ljubljana
-- The Laboratory of Neuroendocrinology - Molecular Cell Physiology; School of Medicine, Ljubljana
-- Institute of Oncology, University Clinic Center, Ljubljana
-- Clinic for Nuclear Medicine, University Clinic Center, Ljubljana
+- Institut Jožef Stefan; Oddelek za tehnologije znanja, Ljubljana
+- Laboratorij za nevroendokrinologijo - Molekularna celična fiziologija; Medicinska fakulteta, Ljubljana
+- Onkološki inštitut, Univerzitetni klinični center, Ljubljana
+- Klinika za nuklearno medicino, Univerzitetni klinični center, Ljubljana
 
-# Collaborators
+# Sodelavci
 
-- **prof. Jesse Davis**, KU Leuven, Belgium
-- **prof. Pablo Moscato**, University of Newcastle, Australia
-- **prof. Andreas Holzinger**, Technical University Graz, Austria
-- **as. prof. Bujar Raufi**, South East European University, Macedonia
-- **prof. Johannes Fuernkrantz**, TU Darmstadt, Germany
-- **prof. dr. Nenad Filipović**, University of Kragujevac, Serbia
-- **dr. Raul Fidalgo**, University of Malaga, Spain
-- **dr. Petr Savicky**, Institute of Computer Science, Czech Academy of Sciences, Prague, Czech Republic
-- **dr. Ciril Grošelj**, MD, Clinic for Nuclear Medicine, Ljubljana
-- **prof. dr. Aris Likas**, University of Ioannina, Greece
-- **prof. dr. Joao Gama**, University of Porto, Portugal
-- **dr. Pedro Pereira Rodrigues**, University of Porto, Portugal
-- **prof. dr. Nada Lavrač**, Jozef Stefan Institute; Department of knowledge technologies, Ljubljana, Slovenia
-- **prof. dr. Marko Kreft**, The Laboratory of Neuroendocrinology - Molecular Cell Physiology; School of Medicine, Ljubljana
-- **dr. Metka Milčinski**, Clinic for Nuclear Medicine, University Clinic Center, Ljubljana
-- **prof. Koen Vanhoof**, University of Hasselt, Belgium
-- **dr. Branko Zakotnik**, Institute of Oncology, University Clinic Center, Ljubljana
-- **mag. Cvetka Grašič Kuhar**, Institute of Oncology, University Clinic Center, Ljubljana
-- **doc. dr. Josip Musić**, Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture, University of Split, Croatia
+- **prof. Jesse Davis**, KU Leuven, Belgija
+- **prof. Pablo Moscato**, University of Newcastle, Avstralija
+- **prof. Andreas Holzinger**, Tehnična univerza Gradec, Avstrija
+- **as. prof. Bujar Raufi**, Univerza Jugovzhodne Evrope, Makedonija
+- **prof. Johannes Fuernkrantz**, TU Darmstadt, Nemčija
+- **prof. dr. Nenad Filipović**, Univerza v Kragujevcu, Srbija
+- **dr. Raul Fidalgo**, Univerza v Malagi, Španija
+- **dr. Petr Savicky**, Inštitut za računalništvo, Češka akademija znanosti, Praga, Češka
+- **dr. Ciril Grošelj**, dr. med., Klinika za nuklearno medicino, Ljubljana
+- **prof. dr. Aris Likas**, Univerza v Ioannini, Grčija
+- **prof. dr. Joao Gama**, Univerza v Portu, Portugalska
+- **dr. Pedro Pereira Rodrigues**, Univerza v Portu, Portugalska
+- **prof. dr. Nada Lavrač**, Institut Jožef Stefan; Oddelek za tehnologije znanja, Ljubljana, Slovenija
+- **prof. dr. Marko Kreft**, Laboratorij za nevroendokrinologijo - Molekularna celična fiziologija; Medicinska fakulteta, Ljubljana
+- **dr. Metka Milčinski**, Klinika za nuklearno medicino, Univerzitetni klinični center, Ljubljana
+- **prof. Koen Vanhoof**, Univerza v Hasseltu, Belgija
+- **dr. Branko Zakotnik**, Onkološki inštitut, Univerzitetni klinični center, Ljubljana
+- **mag. Cvetka Grašič Kuhar**, Onkološki inštitut, Univerzitetni klinični center, Ljubljana
+- **doc. dr. Josip Musić**, Fakulteta za elektrotehniko, strojništvo in pomorstvo, Univerza v Splitu, Hrvaška

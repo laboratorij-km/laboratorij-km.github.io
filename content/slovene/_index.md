@@ -1,17 +1,12 @@
 +++
-title = 'LKM Landing Page'
-date = 2024-08-30T14:44:25+02:00
+title = 'LKM Domača stran'
 draft = false
 +++
 
-SLOVENE
+### Laboratorij za kognitivno modeliranje
 
-### Laboratory for Cognitive Modeling
+Raziskovalna področja LKM so umetna inteligenca, strojno učenje, statistika, obdelava naravnega jezika, analiza slik, kognitivno modeliranje in rudarjenje podatkov. Raziskave se uporabljajo za kognitivne, medicinske, biološke, finančne in druge procese. Razvijamo, preizkušamo in uporabljamo nove pristope in algoritme za modeliranje na podlagi številskih, simbolnih in slikovnih podatkov. Nedavne raziskave vključujejo globoke nevronske mreže za obdelavo jezika in grafov, nevronsko-simbolično obdelavo, generiranje podatkov, zanesljivost napovedi modelov pri klasifikaciji in regresiji, zanesljivost gručenja, učenje z ansambli, latentne modele za številske podatke, prenos modelov med jeziki, povzemanje besedil, modeliranje športnih podatkov, profiliranje uporabnikov, priporočilne sisteme, rudarjenje prostorskih podatkov in rudarjenje podatkovnih tokov.
 
-LKM research areas are artificial intelligence, machine learning, statistics, natural language processing, image analysis, cognitive modelling, and data mining. Research is applied to cognitive, medical, biological, financial, and other processes. We are developing, testing, and applying new approaches and algorithms for modelling from numeric, symbolic and pictorial data. Recent research is related to deep neural networks in language and graphs, neuro-symbolic processing, data generation, reliability of models’ predictions in classification and regression, reliability of clustering, ensemble learning, latent models for count data, cross-lingual model transfer, text summarization, modelling sports data, user profiling, recommendation systems, mining spatial data, and mining of data streams.
+{{< image src="cognitiveModeling.png" alt="Kognitivno modeliranje" class="img-fluid" >}}
 
-<!-- ![Cognitive Modelling Img](img/cognitiveModeling.png) -->
-
-{{< image src="cognitiveModeling.png" alt="Cognitive Modelling" class="img-fluid"  >}}
-
-[LKM homepage @ FRI webpages](https://fri.uni-lj.si/en/laboratory/lkm)
+[Domača stran LKM @ FRI spletne strani](https://fri.uni-lj.si/laboratorij/lkm)

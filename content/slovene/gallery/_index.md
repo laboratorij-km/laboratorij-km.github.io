@@ -1,10 +1,8 @@
 +++
-title = 'Gallery'
+title = 'Galerija'
 draft = false
 +++
 
-SLOVENE
+## Galerija
 
-## Gallery
-
-Here are some images from our lab.
+Tukaj so nekatere slike iz našega laboratorija.

@@ -1,36 +1,31 @@
 +++
 title = 'Research'
-date = 2024-10-05T13:36:26+02:00
 draft = false
 +++
 
-SLOVENE
-
-# Research
+# Raziskave
 
 ---
 
-Machine learning and data mining search for regularities in moderate to large databases by learning models of data. Generated models can be used for explanation of data, simulations, process control, prediction, and solving new related problems. An example is medical diagnostics, where from previously diagnosed patients a model for diagnosing new, previously unseen patients can be derived. Similar approaches can also be used in insurance or banking businesses, where predictive models can be used for detecting unusual or interesting patterns in a day-to-day business process.
-
-<!-- ![](lkm-chart.png) -->
+Strojno učenje in rudarjenje podatkov iščeta zakonitosti v srednje velikih do velikih podatkovnih zbirkah z učenjem modelov podatkov. Generirani modeli se lahko uporabljajo za razlago podatkov, simulacije, upravljanje procesov, napovedovanje in reševanje novih, sorodnih problemov. Primer tega je medicinska diagnostika, kjer iz prej diagnosticiranih pacientov izhaja model za diagnosticiranje novih, prej nevidenih pacientov. Podobne pristope je mogoče uporabiti tudi v zavarovalništvu ali bančništvu, kjer se napovedni modeli uporabljajo za odkrivanje nenavadnih ali zanimivih vzorcev v vsakodnevnih poslovnih procesih.
 
 {{< image src="lkm-chart.png" alt="lkm chart" class="img-fluid"  >}}
 
-# Infrastructure
+# Infrastruktura
 
 ---
 
-Besides desktop computers and notebooks, the laboratory is equipped with the following powerful computers:
+Poleg namiznih računalnikov in prenosnikov je laboratorij opremljen z naslednjimi zmogljivimi računalniki:
 
-#### General purpose server - Dell PowerEdge M630
+#### Splošni strežnik - Dell PowerEdge M630
 
 ---
 
-Specifications
+Specifikacije:
 
-CPU: 2 x Intel Xeon E5-2630 V3 / 8 core, 2.40-3.20 GHz, 20 MB
+CPU: 2 x Intel Xeon E5-2630 V3 / 8 jedr, 2.40-3.20 GHz, 20 MB
 
-Total number of CPU: 16 (32 - Hyperthreading)
+Skupno število CPU: 16 (32 - hipernitnost)
 
 RAM: 384 GB DDR4 2400 MHz
 
@@ -40,83 +35,79 @@ HDD: 22 TB
 
 ---
 
-Specifications
+Specifikacije:
 
-CPU: 2x Intel Xeon Silver 4214 / 12 core, 2.20 GHz, 16.5 MB
+CPU: 2x Intel Xeon Silver 4214 / 12 jedr, 2.20 GHz, 16.5 MB
 
-Total number of CPU: 24 (48 - Hyperthreading)
+Skupno število CPU: 24 (48 - hipernitnost)
 
 GPU: 4x Nvidia GeForce RTX 2080 Ti / 11 GB GDDR6
 
-Total GPU memory: 44 GB
+Skupni pomnilnik GPU: 44 GB
 
 RAM: 384 GB DDR4 2400 MT/s
 
 HDD: 512 GB SSD
 
-NAS: 100+ TB shared storage (with other laboratories)
+NAS: 100+ TB deljenega prostora (z drugimi laboratoriji)
 
-#### General purpose server
+#### Splošni strežnik
 
 ---
 
-Specifications
+Specifikacije:
 
-CPU: 2x Intel Xeon Silver 4214 / 12 core, 2.20 GHz, 16.5 MB
+CPU: 2x Intel Xeon Silver 4214 / 12 jedr, 2.20 GHz, 16.5 MB
 
-Total number of CPU: 24 (48 - Hyperthreading)
+Skupno število CPU: 24 (48 - hipernitnost)
 
 GPU: 2x Nvidia Quadro RTX 5000 / 16 GB
 
-Total GPU memory: 32 GB
+Skupni pomnilnik GPU: 32 GB
 
 RAM: 384 GB
 
-NAS: 100+ TB shared storage
+NAS: 100+ TB deljenega prostora
 
-#### GPU server - NVidia DGX-A100
+#### GPU strežnik - NVidia DGX-A100
 
 ---
 
-Specifications
+Specifikacije:
 
-CPU: 2x 64 core
+CPU: 2x 64 jedr
 
 GPU: 8x NVidia DGX-A100
 
-Total GPU memory: 320 GB
+Skupni pomnilnik GPU: 320 GB
 
 RAM: 2 TB
 
 SSD: 20 TB
 
-<!-- ![](C75T1877.JPG) -->
+{{< image src="C75T1877.jpg" alt="Slika" class="img-fluid"  >}}
 
-<!-- ![](zabice.JPG) -->
+{{< image src="zabice.jpg" alt="Žabice" class="img-fluid" >}}
 
-{{< image src="C75T1877.jpg" alt="Img" class="img-fluid"  >}}
-
-{{< image src="zabice.jpg" alt="Zabice" class="img-fluid" >}}
-
-# Topics of Research
+# Raziskovalne teme
 
 ---
 
-- machine learning and data mining,
-- modelling of numerical, symbolic, and image data,
-- image analysis,
-- medical diagnostics and prognostics,
-- estimation of data quality and data importance,
-- statistical data analysis,
-- deep learning,
-- interactions of various parameters,
-- text summarization,
-- web users profiling,
-- network analysis,
-- text mining,
-- graph mining.
+- strojno učenje in rudarjenje podatkov,
+- modeliranje numeričnih, simbolnih in slikovnih podatkov,
+- analiza slik,
+- medicinska diagnostika in prognostika,
+- ocenjevanje kakovosti in pomembnosti podatkov,
+- statistična analiza podatkov,
+- globoko učenje,
+- interakcije različnih parametrov,
+- povzemanje besedil,
+- profiliranje spletnih uporabnikov,
+- analiza omrežij,
+- rudarjenje besedil,
+- rudarjenje grafov.
 
-# Survey of activities
+# Pregled dejavnosti
 
 ---
 

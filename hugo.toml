@@ -5,7 +5,6 @@ theme = "site-theme"
 relativeURLs = true
 paginate = 3
 
-
 [languages]
   [languages.en]
     contentDir = 'content/english'
@@ -100,10 +99,10 @@ paginate = 3
         url = "/gallery/"
         weight = 600
 
-      [[languages.en.menus.main]]
-        name = "Shiny"
-        url = "/shiny/"
-        weight = 700
+      # [[languages.en.menus.main]]
+      #   name = "Shiny"
+      #   url = "/shiny/"
+      #   weight = 700
   [languages.si]
         contentDir = 'content/slovene'
         languageName = 'Slovene'
@@ -113,21 +112,21 @@ paginate = 3
       [languages.si.menus]
           [[languages.si.menus.main]]
             name = "O nas"
-            url = "/"
+            url = "/si/"
             weight = 100
             identifier = "about"  
             
-            [[languages.si.menus.main]]
-            name = "O nas"
-            url = "/si/"
-            weight = 101
-            parent = "about"  
+            # [[languages.si.menus.main]]
+            # name = "O nas"
+            # url = "/si/"
+            # weight = 101
+            # parent = "about"  
 
-            [[languages.si.menus.main]]
-            name = "Predstavitve"
-            url = "/si/about/presentations/"
-            parent = "about"  
-            weight = 102
+            # [[languages.si.menus.main]]
+            # name = "Predstavitve"
+            # url = "/si/about/presentations/"
+            # parent = "about"  
+            # weight = 102
 
             # [[languages.si.menus.main]]
             # name = "Lokacija"

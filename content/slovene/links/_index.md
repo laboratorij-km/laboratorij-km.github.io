@@ -1,11 +1,9 @@
 +++
-title = 'Links'
+title = 'Povezave'
 draft = false
 +++
 
-SLOVENE
-
-### Journals
+### Revije
 
 - [Journal of Machine Learning Research](http://www.jmlr.org/)
 - [Machine Learning Journal](http://www.kluweronline.com/issn/0885-6125)
@@ -16,7 +14,7 @@ SLOVENE
 - [Nature](http://www.nature.com/index.html)
 - [Data Mining and Knowledge Discovery](http://www.springeronline.com/sgw/cda/frontpage/0,11855,5-0-70-35596293-detailsPage%253Djournal%257Cdescription%257Cdescription,00.html?referer=www.springeronline.com/journal/10618/about)
 
-### Papers, conferences & scientific information
+### Članki, konference in znanstvene informacije
 
 - [Google Scholar](http://scholar.google.com/)
 - [FirstSearch: searching journals](http://firstsearch.oclc.org/)
@@ -27,7 +25,7 @@ SLOVENE
 - [Call for Papers](http://www.papersinvited.com/)
 - [Windows Live Academic](http://academic.live.com/)
 
-### Bibliographies
+### Bibliografije
 
 - [AI bibliography](http://liinwww.ira.uka.de/bibliography/Ai/others.html)
 - [LIDOS Literature Information and Documentation System](http://www.dfki.de/lidos/)
@@ -35,7 +33,7 @@ SLOVENE
 - [CiteSeer](http://citeseer.ist.psu.edu/) (citation indexes)
 - [A Collection of Computer Science Bibliographies in BibTeX](http://liinwww.ira.uka.de/bibliography/index.html)
 
-### Resources
+### Viri
 
 - [KDNuggets Directory](http://www.kdnuggets.com/)
 - [StatLib---Datasets Archive](http://lib.stat.cmu.edu/datasets/)
@@ -47,21 +45,21 @@ SLOVENE
 - [Text Analysis Info](http://www.textanalysis.info/)
 - [Computer Science Education Resource Guide](http://www.smartscholar.com/computer-science-guide/)
 
-### Societies
+### Društva
 
 - [ACM Special Interest Group on AI (SIGART)](http://sigart.acm.org/)
 - [AAAI](http://www.aaai.org/)
 - [SLAIS](http://slais.ijs.si/)
 - [ECCAI](http://www.eccai.org/)
 
-### Projects
+### Projekti
 
 - [IPR-Helpdesk](http://www.ipr-helpdesk.org/)
 - [CORDIS IST](http://www.cordis.lu/ist/)
 - [CORDIS Partners Search](http://partners-service.cordis.lu/)
 - [ARRS - Agencija za raziskovalno dejavnost RS](http://www.arrs.gov.si/sl/)
 
-### People
+### Osebe
 
 - [Leo Breiman](https://www.stat.berkeley.edu/~breiman/)
 - [Thomas G. Dietterich](http://web.engr.oregonstate.edu/~tgd/)
@@ -72,7 +70,7 @@ SLOVENE
 - [Foster Provost](http://pages.stern.nyu.edu/~fprovost/)
 - [Jude W. Shavlik](http://pages.cs.wisc.edu/~shavlik/shavlik.html)
 
-### Tools
+### Orodja
 
 - [The R Project for Statistical Computing](http://www.r-project.org/)
 - [Weka Data Mining in Java](http://www.cs.waikato.ac.nz/ml/weka/index.html)
@@ -83,19 +81,19 @@ SLOVENE
 - [Asscoiation Rules Info](http://www.cs.umb.edu/%7Elaur/ARtool/)
 - [The ROOT System](http://root.cern.ch/)
 
-### General computer science
+### Splošno računalništvo
 
 - [Science, Computers & Technology](http://lii.org/pub/topic/scitech)
 - [Dictionary of Algorithms and Data Structures](http://www.nist.gov/dads/)
 - [The Stony Brook Algorithm Repository](http://www.cs.sunysb.edu/%7Ealgorith/)
 
-### Commercial research
+### Komercialne raziskave
 
 - [Cycorp, Inc.](http://www.cyc.com/)
 - [RuleQuest Research](http://www.rulequest.com/)
 - [Salford Systems](http://salford-systems.com/)
 
-## Index
+## Kazalo
 
 - [Journals](links.html#journals)
 - [Papers, conferences & scientific information](links.html#papers)

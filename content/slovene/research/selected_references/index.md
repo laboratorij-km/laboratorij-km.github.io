@@ -1,12 +1,9 @@
 +++
-title = 'Selected References'
-date = 2024-10-05T13:36:26+02:00
+title = 'Izbrane Reference'
 draft = false
 +++
 
-SLOVENE
-
-### Journal Papers
+### Članki v Revijah
 
 ---
 
@@ -142,7 +139,7 @@ M. Robnik-Šikonja, I. Kononenko. Theoretical and Empirical Analysis of ReliefF 
 
 I. Kononenko: Machine learning for medical diagnosis: History, state of the art and perspective, Invited paper, Artificial Intelligence in Medicine – ISSN 0933-3657, 23(1):89–109, 2001.
 
-### Book
+### Knjiga
 
 ---
 
@@ -154,7 +151,7 @@ I. Kononenko, M.Kukar: Machine Learning and Data Mining: Introduction to Princip
 
 [http://sicris.izum.si/search/grp.aspx?lang=slv&id=6836](http://sicris.izum.si/search/grp.aspx?lang=slv&id=6836)
 
-## Index
+## Kazalo
 
 ---
 

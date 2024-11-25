@@ -1,3 +1,7 @@
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
 .vh-50 {
   height: 50vh;
 }
@@ -37,7 +41,6 @@ pre {
 
 #masthead {
   font-family: Helvetica, Arial, Verdana, sans-serif;
-  color: #494949;
   margin: 0 auto;
   border: 0;
   padding: 0;
@@ -47,6 +50,7 @@ pre {
 
 .navbar {
   padding: 0;
+  text-align: center;
 }
 
 h1,
@@ -63,13 +67,14 @@ h5 {
 } */
 
 .nav-link:hover,
-.navbar-nav .nav-link.show {
+.navbar-nav .nav-link.show,
+.nav-link:focus {
   color: #0c8dc7;
 }
 
-.nav-link:focus {
+/* .nav-link:focus {
   color: white;
-}
+} */
 
 .lang-active {
   text-decoration: underline;
