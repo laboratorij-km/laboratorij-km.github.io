@@ -1,12 +1,12 @@
 baseURL = 'https://laboratorij-km.github.io/'
 # languageCode = 'en-us'
-title = 'LKM site'
 theme = "site-theme"
 relativeURLs = true
 paginate = 3
 
 [languages]
   [languages.en]
+    title = 'MLLT'
     contentDir = 'content/english'
     languageName = 'English'
     weight = 10
@@ -104,8 +104,9 @@ paginate = 3
       #   url = "/shiny/"
       #   weight = 700
   [languages.si]
+        title = 'SUJT'
         contentDir = 'content/slovene'
-        languageName = 'Slovene'
+        languageName = 'Slovenščina'
         weight = 20
         [languages.si.params]
           flag = "flag-icon-si"

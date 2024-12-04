@@ -7,7 +7,6 @@ body {
 }
 
 a {
-  /* text-decoration: none; */
   color: black;
 }
 
@@ -44,7 +43,6 @@ pre {
   margin: 0 auto;
   border: 0;
   padding: 0;
-  background-color: #cbcdcc;
   /* background: linear-gradient(to bottom, rgba(0, 110, 141), rgb(129, 213, 236)); */
 }
 
@@ -69,7 +67,7 @@ h5 {
 .nav-link:hover,
 .navbar-nav .nav-link.show,
 .nav-link:focus {
-  color: #0c8dc7;
+  color: #011e41;
 }
 
 /* .nav-link:focus {
